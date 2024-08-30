@@ -1,0 +1,11 @@
+/your-project-directory/
+    ├── index.html            # Main homepage
+    ├── styles.css            # Global styles
+    ├── images/               # Folder for images
+    │   └── NATE_circle_lowquality.png
+    ├── about/
+    │   └── index.html        # About Me page
+    ├── projects/
+    │   └── index.html        # Projects page
+    ├── contact/
+    │   └── index.html        # Contact page

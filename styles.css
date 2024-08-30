@@ -3,6 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #222222; /* Default text color - Dark Grey */
 }
 
 .container {
@@ -13,8 +14,8 @@ body {
 
 /* Header Section */
 header {
-    background: #333;
-    color: #fff;
+    background: #222222; /* Dark Grey */
+    color: #ffffff;
     padding: 20px 0;
     text-align: center;
 }
@@ -26,8 +27,8 @@ header h1 {
 
 /* Navigation Menu */
 nav {
-    background: #444;
-    color: #fff;
+    background: #cccccc; /* Light Grey */
+    color: #000000;
     padding: 10px 0;
     text-align: center;
 }
@@ -43,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #007acc; /* Blue */
     text-decoration: none;
     font-weight: bold;
 }
@@ -81,8 +82,8 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
-    background: #333;
-    color: #fff;
+    background: #61147bff; /* Purple */
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
