@@ -73,6 +73,11 @@ nav {
     align-items: center;
 }
 
+.nav-left img.nav-logo {
+    height: calc(0.8 * var(--nav-height)); /* Ensure it doesn't exceed the nav height */
+    width: auto; /* Maintain the aspect ratio */
+}
+
 /* Hover effect for the links */
 .nav-left a:hover, .nav-right a:hover {
     background-color: #005fa3; /* Slightly darker on hover */
