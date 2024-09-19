@@ -169,3 +169,12 @@ footer {
     align-items: center; /* Vertically center content */
     margin-top: 20px;
 }
+
+.bolding-font {
+    font-weight: bold; /* Optional: make the text bold */
+    color: #333; /* Optional: change the color */
+    margin-bottom: 5px; /* Adds space between the header and the paragraph */
+}
+
+
+

@@ -6,31 +6,36 @@ Baseline page
 When duplicating this page you need to do the following
 - Fix relative paths for all stylesheets and icon in head
 - Fix relative paths for js scroll funciton
-- Fix relative paths in the navigation menu
+- Ensure navigation menu works
+- Change the title in the <head> to "LLR Drone | " + page Nmae
 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../images/NATE_circle_lowquality.png" type="image/png">
+    <title>Nathan Kopacz | Template</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../../images/EYE_1024px.png" type="image/png">
 </head>
 <body>
     <!-- Navigation Menu -->
     <nav>
         <div class="nav-left">
-            <a href="../index.html" class="nav-link">Nathan Kopacz</a>
+            <a href="../../index.html" class="nav-link">
+                <img src="../../images/EYE_1024px.png" alt="Logo" class="nav-logo">
+            </a>
         </div>
         <div class="nav-right">
-            <a href="../pages/about" class="nav-link">About</a>
-            <a href="../pages/projects" class="nav-link">Projects</a>
-            <a href="../pages/contact" class="nav-link">Contact</a>
+            <a href="../../pages/team_members" class="nav-link">Team Members</a>
+            <a href="../../pages/timeline" class="nav-link">Timeline</a>
+            <a href="../../pages/demos" class="nav-link">Demos</a>
         </div>
     </nav>
 
     <header>
-        <div class="line">Header line 1 example</div>
-        <div class="line">Header line 2 example</div>
+        <div class="container">
+            <h1>Template Header</h1>
+            <p>Additonal Information</p>
+        </div>
     </header>
 
     <section class="generic-section">
@@ -61,6 +66,7 @@ When duplicating this page you need to do the following
     </section>
 
 
+
     <!-- Footer Section -->
     <footer>
         <div class="container">
@@ -68,6 +74,6 @@ When duplicating this page you need to do the following
         </div>
     </footer>
 
-    <script src="../js/nav_scroll.js"></script>
+    <script src="../../js/nav_scroll.js"></script>
 </body>
 </html>
