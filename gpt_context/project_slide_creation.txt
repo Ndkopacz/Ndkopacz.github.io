@@ -1,0 +1,34 @@
+Generate a new project slide using the following structure:
+
+Title: Provide the title of the project.
+Preview Image: The preview image should be located at image_folder + 'projects/misc/title/preview.jpg', where title is the lowercase project title with spaces replaced by underscores.
+Preview Description: Write a brief 1-2 sentence description of the project, focusing on its purpose and key details.
+Project Description: Provide a more detailed explanation of the project, explaining its goals, challenges, tools used, and any notable outcomes. This should be 3-4 sentences or more.
+Tags: Select at least one tag from the provided list, ensuring at least one of the selected tags is searchable (marked with "// Searchable Tag"). You may add new tags if necessary, but call them out in the response.
+Detail Images: Provide exactly 3 images located at image_folder + 'projects/misc/title/detail_image_1.jpg', image_folder + 'projects/misc/title/detail_image_2.jpg', and image_folder + 'projects/misc/title/detail_image_3.jpg'.
+Order: Assign an order based on the effort and time spent on the project.
+Order 1 is for significant, time-consuming projects.
+Order 3 is for quick, one-off projects.
+Order 2 is for medium effort projects.
+Available Tags: "Artificial Intelligence", "Machine Learning", "Deep Learning", "Data Science", "Computer Vision", "TensorFlow", "Pytorch", "Programming", "Python", "C++", "Java", "Edge Computing", "IoT", "Robotics", "3D Printing/Modeling", "Fusion 360".
+
+Return the response in the following format:
+
+javascript
+Copy code
+{
+    title: 'Sample Card',
+    preview_image: image_folder + 'projects/misc/sample_card/preview.jpg',
+    preview_description: 'A quick description of the project goes here.',
+    project_description: 'Detailed description for the project goes here. It can be much longer and provide in-depth information about the project.',
+    tags: ['Programming', 'Python'],
+    detail_images: [
+        image_folder + 'projects/misc/sample_card/detail_image_1.jpg',
+        image_folder + 'projects/misc/sample_card/detail_image_2.jpg',
+        image_folder + 'projects/misc/sample_card/detail_image_3.jpg'
+    ],
+    order: 2
+}
+Be sure the response is properly formatted for JavaScript, and include any newly added tags in the response.
+
+The project is as follows:

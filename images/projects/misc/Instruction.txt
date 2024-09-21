@@ -1,0 +1,8 @@
+------------------------- Naming conventions -----------------------
+
+Directories: must be the project name, no caps, separated by underscores
+images:
+    preview.jpg             // 4:3 Aspect Ration
+    detail_image_1.jpg      // ??
+    detail_image_2.jpg
+    detail_image_3.jpg

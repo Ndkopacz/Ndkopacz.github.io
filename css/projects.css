@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+
+
+/* General styling for the project section */
+.project-section {
+    background-color: #ffffff; /* Light gray background */
+    padding: 0px 00px; /* Space around the section */
+    margin: 20px 20px; /* Space between this section and others */
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap when screen size is smaller */
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 10px; /* Round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #f4f4f4; /* Light background color */
+    gap: 20px; /* Space between elements */
+}
+
+/* Styling for the project emblem (image on the left) */
+.project-emblem img {
+    width: 300px;
+    height: 300px;
+    border-radius: 21%; /* Circular image */
+    object-fit: cover; /* Ensure the image fills the container */
+    box-shadow: -5px 8px 5px rgba(0, 0, 0, 0.2); /* Add shadow for a floating effect */
+    background-color: #f4f4f4; /* Set the background color to red */
+}
+
+/* Styling for the project description (center text) */
+.project-description {
+    flex: 2; /* Take up more space than other elements */
+    text-align: center;
+    align-self: flex-start;
+}
+
+/* Apply the same heading style as generic-section */
+.project-description h2 {
+    font-size: 2em;
+    margin-bottom: 20px; /* Space between the heading and the first paragraph */
+    color: #0071cc; /* Blue heading color */
+}
+
+/* Apply the same paragraph style as generic-section */
+.project-description p {
+    font-size: 1.1em; /* Slightly larger font size for readability */
+    line-height: 1.8; /* Improved line spacing for readability */
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #333; /* Darker text color */
+}
+
+/* Styling for the double images */
+.double-image {
+    display: flex;
+    gap: 15px; /* No gap between the two images so they stay together */
+}
+
+.double-image img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover; /* Ensure the image fills the container */
+    box-shadow: -5px 8px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for a depth effect */
+}
+
+/* Left Image (Rounded on the left corners) */
+.double-image img.left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0; /* No rounding on the inside corner */
+    border-bottom-right-radius: 0; /* No rounding on the inside corner */
+}
+
+/* Right Image (Rounded on the right corners) */
+.double-image img.right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0; /* No rounding on the inside corner */
+    border-bottom-left-radius: 0; /* No rounding on the inside corner */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .project-container {
+        flex-direction: row; /* Keep the layout horizontal on larger screens */
+    }
+
+    .double-image {
+        flex-direction: row; /* Ensure the images stay side by side */
+    }
+}
+
+@media (max-width: 767px) {
+    .project-container {
+        flex-direction: column; /* Stack the entire container vertically */
+        text-align: center;
+    }
+
+    .double-image {
+        flex-direction: row; /* Keep the two images side by side even on small screens */
+        justify-content: center; /* Center the images */
+    }
+
+    .double-image img {
+        width: 100px; /* Reduce the size for small screens */
+        height: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .project-container {
+        flex-direction: column; /* Stack all elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .double-image img {
+        width: 100%; /* Make images full-width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+/* ---------------------------------------------------------------- */
+
+/* Portfolio Section Styling */
+.portfolio-section {
+    background-color: #f4f4f4; /* Same as project-section */
+    padding: 40px 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0071cc; /* Blue heading color */
+}
+
+/* Tag Cloud Styling */
+#tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tag-item {
+    background-color: #eee;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tag-item.selected {
+    background-color: #0071cc;
+    color: #fff;
+}
+
+.tag-item:hover {
+    background-color: #ddd;
+}
+
+/* Project Cards Styling */
+#project-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: calc(33% - 40px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding-top: 0; /* Remove padding at the top to let the image fit better */
+    overflow: hidden; /* Ensures no content overflows */
+}
+
+.project-card img {
+    width: calc(100% + 40px); /* Ensure the image covers full width */
+    height: 200px; /* Set a fixed height for the image */
+    margin-left: -20px; /* Negate the card padding on the left */
+    margin-right: -20px; /* Negate the card padding on the right */
+    object-fit: cover; /* Ensures the image covers the top of the card */
+    border-top-left-radius: 10px; /* Match card's top corners */
+    border-top-right-radius: 10px; /* Match card's top corners */
+    border-bottom-left-radius: 0; /* Square bottom corners */
+    border-bottom-right-radius: 0; /* Square bottom corners */
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #0071cc;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.project-card .tags {
+    margin-top: 15px;
+}
+
+.project-card .tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Detail Panel Modal Styling */
+.detail-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .detail-panel.hidden {
+    display: none;
+  }
+  
+  .detail-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80%;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2em;
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .close-button:hover {
+    color: #000;
+  }
+  
+  /* Detail Panel Content Styling */
+  .detail-content h2 {
+    font-size: 2em;
+    color: #0071cc;
+    margin-top: 0;
+  }
+  
+  .detail-content p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .detail-content .tags .tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .detail-images {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .detail-images img {
+    width: calc(33% - 20px);
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Prevent background scrolling when detail panel is open */
+  .no-scroll {
+    overflow: hidden;
+  }

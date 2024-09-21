@@ -13,6 +13,7 @@ When duplicating this page you need to do the following
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathan Kopacz | Projects</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projects.css">
     <link rel="icon" href="../../images/EYE_1024px.png" type="image/png">
 </head>
 <body>
@@ -32,37 +33,86 @@ When duplicating this page you need to do the following
 
     <header>
         <div class="container">
-            <h1>Template Header</h1>
-            <p>Template extra text</p>
+            <h1>Projects</h1>
         </div>
     </header>
 
-    <section class="generic-section">
-        <div class="container">
-            <h2>Section Heading</h2>
-            <p>This is the first paragraph of generic content.</p>
-            <p>This is the second paragraph of generic content.</p>
-            <p>This is the third paragraph of generic content.</p>
+    <section class="project-section">
+        <div class="project-container">
+            <!-- Project Emblem -->
+            <div class="project-emblem">
+                <img src="../../images/projects/LLDR/LLRD_fullsquare_1500.png" alt="Project Emblem">
+            </div>
+    
+            <!-- Project Description Text -->
+            <div class="project-description">
+                <h2>Launch Land Recharge Drone</h2>
+                <p>
+                    This is a description of the project. It talks about the goals, achievements, and technical skills used in the project.
+                    You can elaborate on the technologies you used and the impact or outcomes of the project.
+                </p>
+            </div>
+    
+            <!-- Double Image -->
+            <div class="double-image">
+                <img src="../../images/Desktop_background.jpg" alt="Left Image" class="left">
+                <img src="../../images/Desktop_background.jpg" alt="Right Image" class="right">
+            </div>
         </div>
     </section>
 
-    <section class="generic-section">
-        <div class="container">
-            <h2>Section Heading 2</h2>
-            <p>This is the first paragraph of generic content.</p>
-            <p>This is the second paragraph of generic content.</p>
-            <p>This is the third paragraph of generic content.</p>
+    <section class="project-section">
+        <div class="project-container">
+            <!-- Project Emblem -->
+            <div class="project-emblem">
+                <img src="../../images/projects/ADAM/ADAM_rounded_square.png" alt="Project Emblem">
+            </div>
+    
+            <!-- Project Description Text -->
+            <div class="project-description">
+                <h2>Autonomous Deterrent and Alert Module</h2>
+                <p>
+                    This is a description of the project. It talks about the goals, achievements, and technical skills used in the project.
+                    You can elaborate on the technologies you used and the impact or outcomes of the project.
+                </p>
+            </div>
+    
+            <!-- Double Image -->
+            <div class="double-image">
+                <img src="../../images/projects/ADAM/BoxV5_Render_2.JPEG" alt="Left Image" class="left">
+                <img src="../../images/Desktop_background.jpg" alt="Right Image" class="right">
+            </div>
         </div>
     </section>
 
-    <section class="generic-section">
-        <div class="container">
-            <h2>Section Heading 3</h2>
-            <p>This is the first paragraph of generic content.</p>
-            <p>This is the second paragraph of generic content.</p>
-            <p>This is the third paragraph of generic content.</p>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="portfolio-container">
+            <!-- Section Heading -->
+            <h2>Extended Portfolio</h2>
+
+            <!-- Tag Cloud -->
+            <div id="tag-cloud">
+                <!-- Tags will be dynamically populated here -->
+            </div>
+
+            <!-- Project Cards -->
+            <div id="project-cards-container">
+                <!-- Project cards will be dynamically populated here -->
+            </div>
         </div>
     </section>
+
+    <!-- Detail Panel Modal -->
+    <div id="detail-panel" class="detail-panel hidden">
+        <div class="detail-content">
+          <span class="close-button">&times;</span>
+          <h2 id="detail-title"></h2>
+          <p id="detail-description"></p>
+          <div id="detail-tags" class="tags"></div>
+          <div id="detail-images" class="detail-images"></div>
+        </div>
+    </div>
 
 
     <!-- Footer Section -->
@@ -73,5 +123,6 @@ When duplicating this page you need to do the following
     </footer>
 
     <script src="../../js/nav_scroll.js"></script>
+    <script type="module" src="../../js/project_scripts.js"></script>
 </body>
 </html>
