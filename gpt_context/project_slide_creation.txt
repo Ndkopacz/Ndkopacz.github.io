@@ -10,7 +10,8 @@ Order: Assign an order based on the effort and time spent on the project.
 Order 1 is for significant, time-consuming projects.
 Order 3 is for quick, one-off projects.
 Order 2 is for medium effort projects.
-Available Tags: "Artificial Intelligence", "Machine Learning", "Deep Learning", "Data Science", "Computer Vision", "TensorFlow", "Pytorch", "Programming", "Python", "C++", "Java", "Edge Computing", "IoT", "Robotics", "3D Printing/Modeling", "Fusion 360".
+Links: associated links that should be included, leave this field blank
+Available Tags: "Artificial Intelligence", "Machine Learning", "Deep Learning", "Data Science", "Computer Vision", "TensorFlow", "Pytorch", "Programming", "Operating Systems", "Python", "C++", "C", "Java", "Edge Computing", "IoT", "Robotics", "3D Printing/Modeling", "Fusion 360".
 
 Return the response in the following format:
 
@@ -27,7 +28,10 @@ Copy code
         image_folder + 'projects/misc/sample_card/detail_image_2.jpg',
         image_folder + 'projects/misc/sample_card/detail_image_3.jpg'
     ],
-    order: 2
+    order: 2,
+    links: [
+        ['github', 'https://github.com/Ndkopacz/student_projects/tree/main/CS%20370/Parent%20and%20Child%20Processes'],
+    ]
 }
 Be sure the response is properly formatted for JavaScript, and include any newly added tags in the response.
 

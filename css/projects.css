@@ -249,13 +249,13 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-  }
-  
-  .detail-panel.hidden {
+}
+
+.detail-panel.hidden {
     display: none;
-  }
-  
-  .detail-content {
+}
+
+.detail-content {
     background-color: #fff;
     padding: 20px;
     width: 80%;
@@ -264,35 +264,35 @@ body {
     overflow-y: auto;
     position: relative;
     border-radius: 10px;
-  }
-  
-  .close-button {
+}
+
+.close-button {
     position: absolute;
     top: 15px;
     right: 20px;
     font-size: 2em;
     cursor: pointer;
     color: #aaa;
-  }
-  
-  .close-button:hover {
+}
+
+.close-button:hover {
     color: #000;
-  }
-  
-  /* Detail Panel Content Styling */
-  .detail-content h2 {
+}
+
+/* Detail Panel Content Styling */
+.detail-content h2 {
     font-size: 2em;
     color: #0071cc;
     margin-top: 0;
-  }
-  
-  .detail-content p {
+}
+
+.detail-content p {
     font-size: 1.2em;
     color: #333;
     line-height: 1.6;
-  }
-  
-  .detail-content .tags .tag {
+}
+
+.detail-content .tags .tag {
     display: inline-block;
     background-color: #eee;
     color: #333;
@@ -301,24 +301,33 @@ body {
     border-radius: 15px;
     margin-right: 5px;
     margin-bottom: 5px;
-  }
-  
-  .detail-images {
+}
+
+.detail-images {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-  }
-  
-  .detail-images img {
+}
+
+.detail-images img {
     width: calc(33% - 20px);
     max-width: 200px;
     height: auto;
     border-radius: 5px;
-  }
-  
-  /* Prevent background scrolling when detail panel is open */
-  .no-scroll {
+}
+
+/* .detail-content img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+} */
+
+/* Prevent background scrolling when detail panel is open */
+.no-scroll {
     overflow: hidden;
-  }
+}
+

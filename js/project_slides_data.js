@@ -20,8 +20,10 @@ const all_tags = [
     "Pytorch",
 
     "Programming",          // Searchable Tag
+    "Operating Systems",
     "Python",
     "C++",
+    "C",
     "Java",
 
     "Edge Computing",       // Searchable Tag - Arduino and NX
@@ -44,6 +46,7 @@ const sample_tag = [
             image_folder + 'projects/misc/sample_card' + 'detail_image_3.jpg',
         ],
         order: 3,
+        links: [],
     },
 ]
 
@@ -59,9 +62,41 @@ export const slidesData = [
             // image_folder + 'projects/misc/shaving_bowl/detail_image_2.jpg',
             // image_folder + 'projects/misc/shaving_bowl/detail_image_3.jpg'
         ],
-        order: 3
+        order: 3,
+        links: [],
+    },
+    {
+      title: 'Parent and Child Processes',
+      preview_image: image_folder + 'projects/misc/parent_and_child_processes/preview1.jpg',
+      preview_description: 'A project focused on process creation and management in operating systems using C programming with fork() and exec().',
+      project_description: 'This project demonstrates how to manage parent and child processes in an operating system using C. The project involves reading input from a file, creating child processes with fork(), and executing programs like Fibonacci, Perrin, and Composite series calculations using exec(). Key challenges included managing inter-process communication and process synchronization with wait(). The outcome was a deeper understanding of process control in Unix-like systems.',
+      tags: ['Programming', 'C', 'Operating Systems'], // Newly added tag "Operating Systems"
+      detail_images: [
+          // image_folder + 'projects/misc/parent_and_child_processes/detail_image_1.jpg',
+          // image_folder + 'projects/misc/parent_and_child_processes/detail_image_2.jpg',
+          // image_folder + 'projects/misc/parent_and_child_processes/detail_image_3.jpg'
+      ],
+      order: 3,
+      links: [
+          ['github', 'https://github.com/Ndkopacz/student_projects/tree/main/CS%20370/Parent%20and%20Child%20Processes'],
+      ],
+    },
+    {
+      title: 'Memory Allocation and Deallocation',
+      preview_image: image_folder + 'projects/misc/memory_allocation_and_deallocation/preview.jpg',
+      preview_description: 'A program designed to dynamically allocate and deallocate memory, analyzing prime numbers in randomly generated arrays.',
+      project_description: 'This project focuses on dynamic memory allocation and deallocation in C. The program generates random-sized arrays, calculates the prime-to-composite ratio in each array, and tracks the iteration with the most primes. The project includes the use of the Valgrind tool to ensure no memory leaks occur, providing insights into memory management challenges. Tools used include C, Valgrind, and random number generation with seeded values.',
+      tags: ['Programming', 'Operating Systems', 'C', 'Memory Management'],
+      detail_images: [
+          // image_folder + 'projects/misc/memory_allocation_and_deallocation/detail_image_1.jpg',
+          // image_folder + 'projects/misc/memory_allocation_and_deallocation/detail_image_2.jpg',
+          // image_folder + 'projects/misc/memory_allocation_and_deallocation/detail_image_3.jpg'
+      ],
+      order: 2,
+      links: [
+        ['github', 'https://github.com/Ndkopacz/student_projects/tree/main/CS%20370/Memory%20Allocation%20and%20Deallocation']
+      ]
     }
-
   ];
 
 

@@ -94,27 +94,62 @@ const detailImages = document.getElementById('detail-images');
 const closeButton = document.querySelector('.close-button');
 
 // Function to open detail panel
+// Function to open detail panel
 function openDetailPanel(project) {
   // Populate detail panel with project data
-  detailTitle.textContent = project.title;
+  detailTitle.innerHTML = project.title;
+
+  // Handle links (GitHub, test links)
+  if (project.links.length > 0) {
+    const linksContainer = document.createElement('span'); // Container for the links
+    project.links.forEach(link => {
+        let linkType = link[0];
+        let linkURL = link[1];
+        let logoImage = '';
+
+        if (linkType === 'github') {
+            logoImage = '../../images/logos/logo_github.png'; // Path to GitHub logo
+        } else if (linkType === 'test') {
+            logoImage = '../../images/logos/logo_test.png'; // Path to test logo (create or use a test logo image)
+        }
+
+        // Create an image element for the logo
+        const linkElement = document.createElement('a');
+        linkElement.href = linkURL;
+        linkElement.target = '_blank'; // Open in a new tab
+
+        const img = document.createElement('img');
+        img.src = logoImage;
+        img.alt = linkType + ' logo';
+        img.style.width = '30px'; // Adjust size as needed
+        img.style.height = '30px';
+        img.style.marginLeft = '10px'; // Adds space between title and icon
+
+        linkElement.appendChild(img);
+        linksContainer.appendChild(linkElement); // Append to links container
+    });
+
+    detailTitle.appendChild(linksContainer); // Append the container to the title
+}
+
   detailDescription.textContent = project.project_description;
 
   // Clear and populate tags
   detailTags.innerHTML = '';
   project.tags.forEach(tag => {
-    const tagSpan = document.createElement('span');
-    tagSpan.classList.add('tag');
-    tagSpan.textContent = tag;
-    detailTags.appendChild(tagSpan);
+      const tagSpan = document.createElement('span');
+      tagSpan.classList.add('tag');
+      tagSpan.textContent = tag;
+      detailTags.appendChild(tagSpan);
   });
 
   // Clear and populate images
   detailImages.innerHTML = '';
   project.detail_images.forEach(imageSrc => {
-    const img = document.createElement('img');
-    img.src = imageSrc;
-    img.alt = project.title;
-    detailImages.appendChild(img);
+      const img = document.createElement('img');
+      img.src = imageSrc;
+      img.alt = project.title;
+      detailImages.appendChild(img);
   });
 
   // Show the detail panel
