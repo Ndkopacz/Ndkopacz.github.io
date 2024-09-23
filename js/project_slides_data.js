@@ -26,6 +26,10 @@ const all_tags = [
     "C",
     "Java",
 
+    'Docker', 
+    'Environment Setup',
+    'CI/CD',
+
     "Edge Computing",       // Searchable Tag - Arduino and NX
     "IoT",                  // Searchable Tag
     "Robotics",             // Searchable Tag
@@ -92,10 +96,24 @@ export const slidesData = [
           // image_folder + 'projects/misc/memory_allocation_and_deallocation/detail_image_2.jpg',
           // image_folder + 'projects/misc/memory_allocation_and_deallocation/detail_image_3.jpg'
       ],
-      order: 2,
+      order: 3,
       links: [
-        ['github', 'https://github.com/Ndkopacz/student_projects/tree/main/CS%20370/Memory%20Allocation%20and%20Deallocation']
+          ['github', 'https://github.com/Ndkopacz/student_projects/tree/main/CS%20370/Memory%20Allocation%20and%20Deallocation']
       ]
+    },
+    {
+      title: 'Server',
+      preview_image: image_folder + 'projects/misc/server/preview.jpg',
+      preview_description: 'A high-performance server used for machine learning projects and serving this website! Powered by an NVIDIA RTX 3090.',
+      project_description: 'A special thanks to my brother Justin for gifting me the equipment needed for this server. After flashing Ubuntu 20.04, I configured the server with essential tools such as CUDA, cuDNN, TensorFlow, Docker, OpenSSH, and Jupyter Notebooks. The server\'s primary purpose is to serve as a dedicated environment for developing machine learning models in Jupyter, powered by an RTX 3090 GPU. In addition to the ML environment, the server is set up to automatically pull and deploy the latest release of my website from GitHub. Both the website and the machine learning environment are contained within Docker containers, showcasing the seamless integration of AI and web technologies with a focus on scalability, resource management, and efficient hardware utilization.',
+      tags: ['Machine Learning', 'Artificial Intelligence', 'Deep Learning', 'Programming', 'Operating Systems', 'Docker', 'Environment Setup', 'TensorFlow', 'CI/CD'],
+      detail_images: [
+          // image_folder + 'projects/misc/server/detail_image_1.jpg',
+          // image_folder + 'projects/misc/server/detail_image_2.jpg',
+          // image_folder + 'projects/misc/server/detail_image_3.jpg'
+      ],
+      order: 2,
+      links: []
     }
   ];
 
