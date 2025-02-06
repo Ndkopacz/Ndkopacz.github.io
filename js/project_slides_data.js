@@ -114,6 +114,36 @@ export const slidesData = [
       ],
       order: 2,
       links: []
+    },
+    {
+      title: 'PAIR',
+      preview_image: image_folder + 'projects/misc/pair/preview.png',
+      preview_description: 'A machine learning-based system for indoor drone navigation in GPS-denied environments, leveraging image pairs to determine relative positioning.',
+      project_description: 'The Paired Automated Image Range (PAIR) project aims to enable drones to navigate in GPS-denied environments by estimating relative positioning through image pairs. Utilizing Unreal Engine 5, I generate synthetic datasets for training, complemented by real-world data collected via a Raspberry Pi 5 equipped with a Pi Camera. The machine learning model processes these image pairs to estimate six degrees of freedom (x, y, z positions, roll, pitch, and yaw). Currently a model of sufficient size as not been trained to be deployed on the Raspberry Pi.',
+      tags: ['Artificial Intelligence', 'Machine Learning', 'Computer Vision', 'TensorFlow', 'Programming', 'Python', 'Edge Computing', 'Robotics'],
+      detail_images: [
+          image_folder + 'projects/misc/server/detail_image_1.png',
+          image_folder + 'projects/misc/server/detail_image_2.png',
+          image_folder + 'projects/misc/server/detail_image_3.png'
+      ],
+      order: 2,
+      links: [
+        ['github', 'https://github.com/Ndkopacz/PAIR/tree/main']
+      ]
+    },
+    {
+      title: 'Bolt Sorter',
+      preview_image: image_folder + 'projects/misc/bolt_sorter/preview.png',
+      preview_description: 'A simple organizational tool to sort hardware.',
+      project_description: 'Following the gridfinity paradigm, this box fits neetly into any gridfinity ecosystem by maintaining the stackability and fit of the standard size. For my purposes, it fits in my drawers where I can easily sort through miscellaneous bolts.',
+      tags: ['3D Printing/Modeling'],
+      detail_images: [
+          image_folder + 'projects/misc/bolt_sorter/detail_image_1.jpg',
+          image_folder + 'projects/misc/bolt_sorter/detail_image_2.jpg',
+          // image_folder + 'projects/misc/bolt_sorter/detail_image_3.png'
+      ],
+      order: 3,
+      links: []
     }
   ];
 

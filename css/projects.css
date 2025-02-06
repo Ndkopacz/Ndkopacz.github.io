@@ -331,3 +331,17 @@ body {
     overflow: hidden;
 }
 
+/* Stack 2 cards horizontally on medium screens */
+@media (max-width: 992px) {
+    .project-card {
+        width: calc(50% - 40px); /* Two cards horizontally with the same gap */
+    }
+}
+
+/* Stack 1 card vertically on small screens */
+@media (max-width: 600px) {
+    .project-card {
+        width: calc(100% - 40px); /* Full width, effectively one card per row */
+    }
+}
+
