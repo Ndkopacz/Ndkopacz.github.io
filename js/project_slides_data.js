@@ -144,8 +144,70 @@ export const slidesData = [
       ],
       order: 3,
       links: []
-    }
-  ];
+    },
+    {
+        title: 'Shower Caddy',
+        preview_image: image_folder + 'projects/misc/shower_caddy/preview.png',
+        preview_description: 'A custom 3D-printed shower caddy to hold soap and razors.',
+        project_description: 'This project was my first major fail of a print. I was attempting to make the design completely print in place with no supports; however it turned out that for the thin spires, they needed a little extra help. This was also a gently introduction to material type for 3D printing. Becuase this project goes in the shower, I chose to print with PETG instead of PLA.',
+        tags: ['3D Printing/Modeling', 'Fusion 360'],
+        detail_images: [
+            image_folder + 'projects/misc/shower_caddy/detail_image_1.jpg'
+        ],
+        order: 3,
+        links: []
+    },
+    {
+        title: 'Fuel Cap',
+        preview_image: image_folder + 'projects/misc/fuel_cap/preview.png',
+        preview_description: 'A simple fuel cap for the detachable hose on my dirtbike gas tank.',
+        project_description: 'This project was a simple necessity as I put the detatchable fuel hose into my dirtbiking box next to my nice boots. I don\'t want them to bet messy! So I design a simply cap (threads included) to make the hose a closed system. Additionally a key was printed to open up the gas tank. After the key broke, I reprinted it in PETG to make it just a little stronger. It should be noted that the cap is also printed in PETG, which, while moderately chemical resistance, is not robust enough for constant contact with gasoline. This isn\'t a problem though since the cap isn\'t really holding any gas back.',
+        tags: ['3D Printing/Modeling', 'Fusion 360'],
+        detail_images: [
+        //     image_folder + 'projects/misc/fuel_cap/detail_image_1.jpg',
+        //     image_folder + 'projects/misc/fuel_cap/detail_image_2.jpg',
+        ],
+        order: 3,
+        links: []
+    },
+    {
+        title: 'Personal PC',
+        preview_image: image_folder + 'projects/misc/personal_pc/preview.jpg',
+        preview_description: 'My first PC build. With 128gb ram and an RTX 3090, this has been my workhorse for modeling, ML training, and gaming.',
+        project_description: 'This project involved assembling a high-performance personal PC from carefully selected components to meet both work and entertainment needs. The build focuses on performance for machine learning specific tasks and, of course, aesthetics! Key components include a powerful GPU, a fast CPU, ample RAM, efficient cooling, and stylish RGB lighting. Additionally I 3d printed and designed an SD card reader mount that is attached to the case for easy access. Since this build I have aquired a server that is now my primary work horse for ML training.',
+        tags: ['Programming', 'Operating Systems', 'Artificial Intelligence', 'Machine Learning', '3D Printing/Modeling', 'Hardware'],
+        detail_images: [],
+        order: 2,
+        links: []
+    },
+    {
+        title: 'Monstera Coaster Plant',
+        preview_image: image_folder + 'projects/misc/monstera/preview.jpg',
+        preview_description: 'A 3D-printed Monstera plant with magnetically detachable leaves that double as coasters.',
+        project_description: 'This project features a decorative Monstera plant model with leaves designed to detach and function as coasters. Magnetic inserts were used to ensure easy attachment and removal of the leaves. The project highlights my skills in 3D modeling and design for functional decor. The model was created in Fusion 360 and printed using a mix of PLA for the plant and flexible TPU for the leaves to allow easy coaster functionality and durability.',
+        tags: ['3D Printing/Modeling', 'Fusion 360'],
+        detail_images: [
+            // image_folder + 'projects/misc/monstera/detail_image_1.jpg',
+            // image_folder + 'projects/misc/monstera/detail_image_2.jpg',
+        ],
+        order: 3,
+        links: []
+    },
+
+    {
+        title: 'Screw Driver Holder',
+        preview_image: image_folder + 'projects/misc/screw_driver_holder/preview.jpg',
+        preview_description: 'A custom 3D modeled case for a screwdriver tool set with a press-fit lid and tension-secured slots.',
+        project_description: 'Designed specifically to hold a set of screwdriver bits securely, this model includes a press-fit lid to ensure the tools stay in place even when upside down. Tension pieces are strategically placed to hold each bit in its designated slot. This highly functional design was created using Fusion 360, focusing on precise dimensions and material flexibility for a custom fit. The robust build was executed using PETG for added strength and durability.',
+        tags: ['3D Printing/Modeling', 'Fusion 360'],
+        detail_images: [
+            // image_folder + 'projects/misc/screw_driver_holder/detail_image_1.jpg',
+            // image_folder + 'projects/misc/screw_driver_holder/detail_image_2.jpg',
+        ],
+        order: 3,
+        links: []
+    },
+];
 
 
 // Function to count tag occurrences in slidesData

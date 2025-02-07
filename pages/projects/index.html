@@ -48,29 +48,28 @@ When duplicating this page you need to do the following
             <div class="project-description">
                 <h2>Launch Land Recharge Drone</h2>
                 <p>
-                    The Launch Land Recharge (LLR) Drone project aims to develop an autonomously operated drone system that can launch, 
-                    land, and recharge on a docking station. This drone will play a key role in larger fully autonomous drone systems, 
-                    providing crucial functionality for rapid deployment in critical environments.
+                    The Launch Land Recharge (LLR) Drone senior design project aims to develop an autonomously operated 
+                    drone system that can launch, land, and recharge on a docking station. For future mission flown by 
+                    UAS it is critical for a system to be fast to respond. To this end, a system that is capable of being 
+                    fully charge and deployable from a remote location would have enormous time reductions.
                 </p>
                 <p>
-                    The core feature of the LLR drone is its ability to autonomously locate and return to a docking station, using 
-                    vision processing to detect April Tags and determine its relative local coordinates. This allows the drone to 
-                    precisely land on the charging pad after completing its mission, ensuring it is always mission-ready. A fully 
-                    3D-printed body and docking station will encapsulate all key components, offering a lightweight, customized 
-                    solution tailored to the project's requirements.
+                    The core feature of the LLR drone is its ability to autonomously locate and return to a docking station, 
+                    using vision processing to detect April Tags and determine its coordinates relative to its docking station. 
+                    This allows the drone to precisely land on the charging pad after completing its mission, ensuring it is 
+                    always ready for the next mission. A fully 3D-printed body and docking station will encapsulate all key 
+                    components, offering a lightweight, customized solution tailored to the project's requirements.
                 </p>
                 <p>
-                    The drone will support both manual and computer-controlled operation, offering flexibility for a variety of 
-                    use cases such as disaster response, infrastructure monitoring, and public safety. With robust April Tag 
-                    detection and processing, it will autonomously hover, land, and launch, making it an integral piece of future 
-                    automated drone systems.
+                    The drone will support both manual and computer-controlled operation, offering flexibility for a variety 
+                    of use cases such as disaster response, infrastructure monitoring, and public safety. With April Tag 
+                    detection and processing, it will autonomously hover, land, and launch, making it an integral piece of 
+                    future automated drone systems.
                 </p>
             </div>
-    
-            <!-- Double Image -->
-            <div class="double-image">
-                <img src="../../images/Desktop_background.jpg" alt="Left Image" class="left">
-                <img src="../../images/Desktop_background.jpg" alt="Right Image" class="right">
+
+            <div class="single-image">
+                <img src="../../images/projects/LLDR/team_members.png" alt="Photo of team members">
             </div>
         </div>
     </section>
@@ -98,18 +97,20 @@ When duplicating this page you need to do the following
                     capabilities, and manually activate deterrents.
                 </p>
                 <p>
-                    The system employs a neural network (NN) to detect specific targets, such as individuals 
-                    wearing a red hat, and communicates these detections to the website for logging and further 
-                    action. Users can control deterrent features, and future iterations will enhance functionality 
-                    by integrating audio streaming, alarm sounds, facial recognition, and additional security 
-                    layers such as police deterrent lockout features.
+                    The system employs a custom convolutional neural network (CNN) to detect dangerous objects such as negative hand gestures 
+                    or dangerous onjects (knives or guns). With a base model complete, future itterations can focus
+                    on additional features such as facial recognition, security, or altering the form factore.
+                    Incorperating a Raspberry Pi allowed the computations to be done on devices; however a more reasonable form factor
+                    would be to use a small module that can turn a servo and stream the video back into the facility. From there a server
+                    would pick up the video to do computations and control the external unit. This would significantly reduce the footprint
+                    of this curretly bulky prototype.
                 </p>
             </div>
     
             <!-- Double Image -->
             <div class="double-image">
                 <img src="../../images/projects/ADAM/BoxV5_Render_2.JPEG" alt="Left Image" class="left">
-                <img src="../../images/Desktop_background.jpg" alt="Right Image" class="right">
+                <img src="../../images/projects/ADAM/open_box.jpg" alt="Right Image" class="right">
             </div>
         </div>
     </section>

@@ -49,6 +49,21 @@ body {
     color: #333;
 }
 
+/* Single image styling */
+.single-image {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.single-image img {
+    width: 500px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 10px; /* Apply consistent rounding */
+    box-shadow: -5px 8px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* Double images styling */
 .double-image {
     display: flex;
@@ -308,6 +323,11 @@ body {
     .double-image img.right,
     .double-image img.left {
         border-radius: 10px;
+    }
+
+    .single-image img {
+        width: 100%;
+        height: auto;
     }
 }
 
