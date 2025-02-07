@@ -93,7 +93,7 @@
 } */
 
 /* Media queries for responsive behavior */
-@media (max-width: 768px) { /* Set to 768px as a commonly used breakpoint for tablets */
+@media (max-width: 1000px) { /* Set to 768px as a commonly used breakpoint for tablets */
     .content-wrapper {
         flex-direction: column; /* Stack contents vertically on smaller screens */
     }
