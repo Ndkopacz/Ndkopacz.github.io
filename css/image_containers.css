@@ -1,0 +1,106 @@
+/* -----------------------Grey Wall------------------------ */
+/* Style for the outermost container */
+
+.grey_wall {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking of child elements */
+    justify-content: center;
+    align-items: center;
+}
+
+.grey_wall .container {
+    width: 80%;
+    max-width: 1000px;
+    text-align: left;
+    margin: auto;
+    overflow: hidden;
+}
+
+.grey_wall h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0071cc;
+}
+
+.grey_wall p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* -----------------------Content Wrapper------------------------ */
+/* Style for ???*/
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row; /* Arrange child elements side by side */
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: visible;
+    gap: 20px; /* Add space between text and image sections */
+    margin-bottom: 20px;
+}
+
+.text-section, .image-section {
+    flex: 1; /* Ensure both sections take up equal space */
+    text-align: left;
+    /* max-width: 50%;  */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: -5px 8px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.image-section .left-image {
+    max-width: 48%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.image-section .right-image {
+    max-width: 48%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+/* .image-section .photo-grid {
+    display: flex;
+    gap: 10px;
+} */
+
+/* .side-by-side-photo {
+    flex: 1;
+    max-width: 48%;
+    border-radius: 10px;
+    box-shadow: -5px 8px 5px rgba(0, 0, 0, 0.2);
+} */
+
+/* .left-image {
+    border-radius: 10px 0 0 10px;
+}
+.right-image {
+    border-radius: 0px 10px 10px 0px;
+} */
+
+/* Media queries for responsive behavior */
+@media (max-width: 768px) { /* Set to 768px as a commonly used breakpoint for tablets */
+    .content-wrapper {
+        flex-direction: column; /* Stack contents vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* Commonly used breakpoint for phones */
+    .content-wrapper {
+        flex-direction: column; /* Stack contents vertically on smaller screens */
+    }
+}

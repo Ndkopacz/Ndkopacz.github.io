@@ -12,12 +12,6 @@ body {
     color: #222222; /* Default text color - Dark Grey */
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 /* Header Section */
 header {
     background: #222222; /* Dark Grey */
@@ -140,6 +134,8 @@ section {
     width: 80%; /* Container width that adjusts based on screen size */
     max-width: 1000px; /* Maximum width for large screens */
     text-align: left;
+    margin: auto;
+    overflow: hidden;
 }
 
 .generic-section h2 {
@@ -157,7 +153,6 @@ section {
 
 
 
-/* TODO - Change height of footer to match the navigation bar */
 /* Footer Section */
 footer {
     background: #222222;
