@@ -52,6 +52,11 @@
     /* max-width: 50%;  */
 }
 
+.image-section {
+    display: flex;
+    gap: 2%;
+}
+
 .image-section img {
     max-width: 100%;
     height: auto;
@@ -60,14 +65,16 @@
 }
 
 .image-section .left-image {
-    max-width: 48%;
+    flex: 1;
+    max-width: 49%;
     aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
 .image-section .right-image {
-    max-width: 48%;
+    flex: 1;
+    max-width: 49%;
     aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: 0 10px 10px 0;

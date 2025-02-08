@@ -260,6 +260,20 @@ export const slidesData = [
         order: 2,
         links: []
     },
+    {
+      title: 'Charging Car',
+      preview_image: image_folder + 'projects/misc/charging_car/preview.jpg',
+      preview_description: 'A custom RC Car that has the capability to begin charging once it connects to its magnetic docking station.',
+      project_description: 'This was a project completed in my second year of college. For many different fields, this was a first attempt at something larger than a toy project. There is a custom bumper that I 3d printed that attaches to the from of the car. There are alluminum plates on this bumper that connect to a charging circuit on the robot. There is a custom printed dock which has charged springs and an electromagnet that activates when the car pushes into the dock. This project was completed, but not without trouble! The electromagnet would get incredibly hot and ended up melting its housing, the power source used for pass through charging on the car didn\'t have the voltage to drive the motors except for at the lowest speed, and the additional programming for the car was abandonded out of concern for time. It was troublesome! But it taught me a great amount about robotics.',
+      tags: ['3D Printing/Modeling', 'Fusion 360', 'Electronics', "Programming", "Operating Systems", "Robotics"],
+      detail_images: [
+          image_folder + 'projects/misc/charging_car/detail_image_1.jpg',
+          image_folder + 'projects/misc/charging_car/detail_image_2.jpg',
+          image_folder + 'projects/misc/charging_car/detail_image_3.jpg',
+      ],
+      order: 1,
+      links: []
+  },
 ];
 
 
