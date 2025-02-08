@@ -36,6 +36,7 @@ const all_tags = [
 
     "3D Printing/Modeling",  // Searchable Tag
     "Fusion 360",
+    "Laser Cutting",
 ]
 const sample_tag = [
     {
@@ -122,9 +123,9 @@ export const slidesData = [
       project_description: 'The Paired Automated Image Range (PAIR) project aims to enable drones to navigate in GPS-denied environments by estimating relative positioning through image pairs. Utilizing Unreal Engine 5, I generate synthetic datasets for training, complemented by real-world data collected via a Raspberry Pi 5 equipped with a Pi Camera. The machine learning model processes these image pairs to estimate six degrees of freedom (x, y, z positions, roll, pitch, and yaw). Currently a model of sufficient size as not been trained to be deployed on the Raspberry Pi.',
       tags: ['Artificial Intelligence', 'Machine Learning', 'Computer Vision', 'TensorFlow', 'Programming', 'Python', 'Edge Computing', 'Robotics'],
       detail_images: [
-          image_folder + 'projects/misc/server/detail_image_1.png',
-          image_folder + 'projects/misc/server/detail_image_2.png',
-          image_folder + 'projects/misc/server/detail_image_3.png'
+          image_folder + 'projects/misc/pair/detail_image_1.png',
+          image_folder + 'projects/misc/pair/detail_image_2.png',
+          image_folder + 'projects/misc/pair/detail_image_3.png'
       ],
       order: 2,
       links: [
@@ -193,7 +194,6 @@ export const slidesData = [
         order: 3,
         links: []
     },
-
     {
         title: 'Screw Driver Holder',
         preview_image: image_folder + 'projects/misc/screw_driver_holder/preview.jpg',
@@ -205,6 +205,59 @@ export const slidesData = [
             // image_folder + 'projects/misc/screw_driver_holder/detail_image_2.jpg',
         ],
         order: 3,
+        links: []
+    },
+    {
+        title: 'Glow Knife v1',
+        preview_image: image_folder + 'projects/misc/glow_knife_v1/preview.jpg',
+        preview_description: 'A vibrant knife prop designed for a Halloween costume, featuring a 3D-printed handle and an acrylic blade illuminated by LEDs.',
+        project_description: 'The Glow Knife v1 is an accessory created for a Halloween costume modeled after a roman galdiator\'s pugio. The knife comprises a custom-designed and 3D-printed handle coupled with a handmade acrylic blade. The blade\'s edges are sanded for a diffused glow effect when lit from within by LEDs, as well as sanded channels (using a dremmel) to look like circuit traces. Trying to do this by hard was a mistake! In the next version of the knife I used a far more efficient and effective method.',
+        tags: ['3D Printing/Modeling', 'Fusion 360'],
+        detail_images: [
+            image_folder + 'projects/misc/glow_knife_v1/detail_image_1.jpg',
+            // image_folder + 'projects/misc/glow_knife_v1/detail_image_2.jpg',
+        ],
+        order: 3,
+        links: []
+    },
+    {
+      title: 'Bracer',
+      preview_image: image_folder + 'projects/misc/bracer/preview.jpg',
+      preview_description: 'A quick prop used for a halloween costume. Paired with the Glow Knife V1',
+      project_description: 'This bracer was a quick and fun project that let me expand out to wearable devices and the difficulty of creating them. The back is lined with a soft fabric to make it a bit more comfortable, but the fit isn\'t perfect to my wrist. The leather straps on the back were difficult to sew without a thick needle, and they were tricky to get the sizing right with a single attempt. The bracer is painted and sealed which worked out great. All in all it was a great introduction to something I will revisit at a later date.',
+      tags: ['3D Printing/Modeling', 'Fusion 360'],
+      detail_images: [
+          // image_folder + 'projects/misc/glow_knife_v1/detail_image_1.jpg',
+          // image_folder + 'projects/misc/glow_knife_v1/detail_image_2.jpg',
+      ],
+      order: 3,
+      links: []
+  },
+    {
+        title: 'Glow Knife v2',
+        preview_image: image_folder + 'projects/misc/glow_knife_v2/preview.jpg',
+        preview_description: 'My second, and far better attempt, at the glow knife concept. Features customized laser-cut blades and distributed as gifts to family members.',
+        project_description: 'Glow Knife v2 builds on the original concept by making the knife smaller, making the button feel better, and laser cutting the blades instead of hand cutting them. Each knife was crafted with a customized blade design, tailored to each family member. My sister came to my rescue on this project, helping me laser cut out each blade and saving a massive amount of time. Rather than spending 2 hours and quite the mess on cutting out glow knife v1, we managed to cut 12 unique blades in under 30 minutes. Plus, she taught me a ton about using a laser cutter including vector, raster, and material selections.',
+        tags: ['3D Printing/Modeling', 'Fusion 360', "Laser Cutting"],
+        detail_images: [
+            image_folder + 'projects/misc/glow_knife_v2/detail_image_1.png',
+            image_folder + 'projects/misc/glow_knife_v2/detail_image_2.jpg',
+        ],
+        order: 1,
+        links: []
+    },
+    {
+        title: 'Desk Nameplate',
+        preview_image: image_folder + 'projects/misc/desk_nameplate/preview.jpg',
+        preview_description: 'A personalized desk nameplate project featuring laser-cut designs and embedded LEDs, crafted collaboratively with my sister.',
+        project_description: 'The Desk Nameplate project involves creating customized nameplates for each family member. We used laser cutting to shape the acrylic plates and 3D printing to incorporate the structure. During the 3D printing process, we embedded electronics and LEDs that glow through the acrylic. The nameplate can be toggled on and off using a capacitive button for a sleek and interactive design. Collaborating on this project with my sister enabled us to efficiently combine our skills in laser cutting and 3D printing techniques.',
+        tags: ['3D Printing/Modeling', 'Fusion 360', 'Laser Cutting', 'Electronics'],
+        detail_images: [
+            image_folder + 'projects/misc/desk_nameplate/detail_image_1.jpg',
+            image_folder + 'projects/misc/desk_nameplate/detail_image_2.jpg',
+            image_folder + 'projects/misc/desk_nameplate/detail_image_3.jpg',
+        ],
+        order: 2,
         links: []
     },
 ];

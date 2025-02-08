@@ -92,6 +92,17 @@
     border-radius: 0px 10px 10px 0px;
 } */
 
+.content-separator {
+    width: 80%; /* Match the width of the content-wrapper */
+    max-width: 1000px; /* Match the max-width of the content-wrapper */
+    height: 5px; /* Thin line */
+    background-color: #0071cc; /* Soft grey color */
+    border: none; /* Remove default border */
+    margin: 20px auto; /* Center and add vertical space around line */
+    margin-top: 0px;
+    border-radius: 3px;
+}
+
 /* Media queries for responsive behavior */
 @media (max-width: 1000px) { /* Set to 768px as a commonly used breakpoint for tablets */
     .content-wrapper {

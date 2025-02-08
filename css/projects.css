@@ -24,8 +24,9 @@ body {
 }
 
 .project-emblem img {
+    max-width: 100%;
     width: 300px;
-    height: 300px;
+    height: auto;
     border-radius: 21%;
     object-fit: cover;
     box-shadow: -5px 8px 5px rgba(0, 0, 0, 0.2);
@@ -271,7 +272,7 @@ body {
 
 .detail-images img {
     width: calc(33% - 20px);
-    max-width: 200px;
+    max-width: 350px;
     height: auto;
     border-radius: 5px;
 }
