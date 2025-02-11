@@ -198,6 +198,15 @@ body {
     margin-bottom: 5px;
 }
 
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    white-space: nowrap;
+}
+
 /* Detail Panel Modal Styling */
 .detail-panel {
     position: fixed;
@@ -329,6 +338,16 @@ body {
     .single-image img {
         width: 100%;
         height: auto;
+    }
+
+    .detail-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;  /* Center images */
+    }
+
+    .detail-images img {
+        width: 100%; /* Use full width of the container */
+        max-width: 100%; /* Ensure images do not exceed container width */
     }
 }
 
